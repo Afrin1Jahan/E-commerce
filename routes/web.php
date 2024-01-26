@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\Backend\HomeController ;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +17,4 @@ use App\Http\Controllers\FrontendController;
 */
 
 Route::get('/',[FrontendController::class,'index']);
+ Route::get('/home',[HomeController::class,'home'])->name('admin.home');
