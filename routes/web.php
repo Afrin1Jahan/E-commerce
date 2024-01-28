@@ -17,4 +17,4 @@ use App\Http\Controllers\Backend\HomeController ;
 */
 
 Route::get('/',[FrontendController::class,'index']);
-Route::get('/home',[HomeController::class,'home'])->name('admin.home');
+Route::get('/home',[HomeController::class,'home'])->name('admin.home'); 
