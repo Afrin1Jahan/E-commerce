@@ -1,4 +1,7 @@
 @extends('frontend.master')
+@section('page_title')
+Grocery Shop Ecommerce
+@endsection
 @section('content')
 <div class="banner">
     <div class="w3l_banner_nav_left">
