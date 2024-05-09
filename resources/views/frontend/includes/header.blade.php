@@ -24,8 +24,8 @@
                 <div class="mega-dropdown-menu">
                     <div class="w3ls_vegetables">
                         <ul class="dropdown-menu drp-mnu">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="login.html">Sign Up</a></li>
+                            <li><a href="{{route('customer.login')}}">Login</a></li>
+                            <li><a href="{{route('register')}}">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,24 +33,24 @@
         </ul>
     </div>
     <div class="w3l_header_right1">
-        <h2><a href="mail.html">Contact Us</a></h2>
+        <h2><a href="{{route('user.contact')}}">Contact Us</a></h2>
     </div>
     <div class="clearfix"> </div>
 </div>
 <!-- script-for sticky-nav -->
 <script>
-$(document).ready(function() {
-     var navoffeset=$(".agileits_header").offset().top;
-     $(window).scroll(function(){
-        var scrollpos=$(window).scrollTop();
-        if(scrollpos >=navoffeset){
-            $(".agileits_header").addClass("fixed");
-        }else{
-            $(".agileits_header").removeClass("fixed");
-        }
-     });
+    $(document).ready(function() {
+        var navoffeset = $(".agileits_header").offset().top;
+        $(window).scroll(function() {
+            var scrollpos = $(window).scrollTop();
+            if (scrollpos >= navoffeset) {
+                $(".agileits_header").addClass("fixed");
+            } else {
+                $(".agileits_header").removeClass("fixed");
+            }
+        });
 
-});
+    });
 </script>
 <!-- //script-for sticky-nav -->
 <div class="logo_products">
@@ -63,7 +63,9 @@ $(document).ready(function() {
                 <li><a href="events.html">Events</a><i>/</i></li>
                 <li><a href="about.html">About Us</a><i>/</i></li>
                 <li><a href="products.html">Best Deals</a><i>/</i></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html">Services</a><i>/</i></li>
+
+
             </ul>
         </div>
         <div class="w3ls_logo_products_left1">

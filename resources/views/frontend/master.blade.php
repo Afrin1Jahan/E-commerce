@@ -10,12 +10,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+@notifyCss
+
   @include('frontend.includes.style')
 </head>
 
 <body>
 <!-- header -->
 @include('frontend.includes.header')
+@include('notify::components.notify')
 
 <!-- //header -->
 <!-- banner -->
@@ -26,12 +29,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3agile_newsletter_left">
 				<h3>sign up for our newsletter</h3>
 			</div>
-			<div class="w3agile_newsletter_right">
+			 <!-- <div class="w3agile_newsletter_right">
 				<form action="#" method="post">
 					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
 					<input type="submit" value="subscribe now">
 				</form>
-			</div>
+			</div>  -->
 			<div class="clearfix"> </div>
 		</div>
 	</div>
@@ -42,5 +45,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bootstrap Core JavaScript -->
 
       @include('frontend.includes.script')
+	  @notifyJs
 </body>
 </html>

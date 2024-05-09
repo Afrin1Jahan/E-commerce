@@ -11,4 +11,11 @@ class FrontendController extends Controller
 
         return view('frontend.home.index');
     }
+
+public function contact(){
+    return view('frontend.contact.contact');
+}
+
+
+
 }
